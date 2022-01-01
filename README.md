@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/nft-preview-card-component--LP4d94ud
+- Live Site URL: https://moblack24.github.io/nft-preview-card/
 
 ## My process
 
@@ -53,8 +53,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Mo'az Ahmad](https://moblack24.github.io/nft-preview-card/)
+- Frontend Mentor - [@MoBlack24](https://www.frontendmentor.io/profile/MoBlack24)
 
 
 
