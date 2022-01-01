@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b;
+  line-height: 1;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.card {
+  margin-inline: auto;
+  padding: 2.5rem;
+  background-color: #14253d;
+  width: 35rem;
+  -webkit-box-shadow: 30px 60px 35px #0c1729, -30px 60px 35px #0c1729;
+          box-shadow: 30px 60px 35px #0c1729, -30px 60px 35px #0c1729;
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.card__image {
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  position: relative;
+}
+
+.card__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #00fff7;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.card__image:hover:after {
+  opacity: 0.5;
+}
+
+.card__image__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  opacity: 0;
+}
+
+.card__image:hover .card__image__icon {
+  opacity: 1;
+  z-index: 100;
+}
+
+.card__heading {
+  color: white;
+  margin-top: 3rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.card__heading:hover {
+  color: #00fff7;
+}
+
+.card__text {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+  color: white;
+}
+
+.card__list__item__info {
+  font-size: 1.6rem;
+}
+
+.card__list__item__info.accent {
+  color: #00fff7;
+}
+
+.card__owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+  border-top: 1px solid #2f415b;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.card__owner__img {
+  width: 3.5rem;
+}
+
+.card__owner__img img {
+  display: block;
+  width: 100%;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card__owner--title {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+}
+
+.card__owner--accent {
+  color: white;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.card__owner--accent:hover {
+  color: #00fff7;
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    width: 40rem;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    width: 34rem;
+    margin-inline: 3rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
